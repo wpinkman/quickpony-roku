@@ -1,6 +1,7 @@
 Sub Main()
 
-	print "Run pony, run!"
+	print "Run QuickPony, run ... "
+	
 	RunScreenSaverSettings()
 	RunScreenSaver()
 

@@ -123,8 +123,8 @@ Sub InitGlobals()
 	globals.stats.clients = {}
 
 	globals.google = {}
-	globals.google.CLIENT_ID =  "315359078666-32jsmi0r3r4n720njmo3avf89ism3c61.apps.googleusercontent.com"
-	globals.google.CLIENT_SECRET = "AHnlzPrtq3Tbij05iGSeoawz"
+	globals.google.CLIENT_ID = InitSecrets().GOOGLE_CLIENT_ID
+	globals.google.CLIENT_SECRET = InitSecrets().GOOGLE_CLIENT_SECRET
 		
 		
 End Sub

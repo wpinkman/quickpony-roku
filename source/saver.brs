@@ -388,7 +388,7 @@ End Function
 
 Function PollGoogle(googleDeviceReg)
 		
-	print "Polling google .. "
+	print "Polling Google .. "
 	globals = GetGlobals()
 		
 	xfer = CreateObject("roUrlTransfer")
@@ -402,14 +402,14 @@ Function PollGoogle(googleDeviceReg)
 	body = body + "&code=" + xfer.UrlEncode(googleDeviceReg.device_code)
 	body = body + "&grant_type=" + xfer.UrlEncode("http://oauth.net/grant_type/device/1.0")
 	
-'	print body
+	print body
 	
-'	curl = "curl -d "+chr(34)+"client_id="
-'		curl = curl + globals.google.CLIENT_ID
-'		curl = curl + "&client_secret=" + globals.google.CLIENT_SECRET
-'		curl = curl + "&code=" + googleDeviceReg.device_code
-'		curl = curl + "&grant_type=" + "http://oauth.net/grant_type/device/1.0" + chr(34) + " https://www.googleapis.com/oauth2/v4/token"
-'print curl
+	curl = "curl -d "+chr(34)+"client_id="
+		curl = curl + globals.google.CLIENT_ID
+		curl = curl + "&client_secret=" + globals.google.CLIENT_SECRET
+		curl = curl + "&code=" + googleDeviceReg.device_code
+		curl = curl + "&grant_type=" + "http://oauth.net/grant_type/device/1.0" + chr(34) + " https://www.googleapis.com/oauth2/v4/token"
+	print curl
 	
 	xfer.AsyncPostFromString(body)
 		

@@ -21,6 +21,11 @@
 
 
 ' rename function to InitSecrets()
-Function InitSecretsTemplate()
-	return {GOOGLE_CLIENT_ID:"<insert client_id here", GOOGLE_CLIENT_SECRET: "<insert secret here>"}
-End Sub
+Function InitSecretsTEMPLATE()
+	ret = {}
+
+	ret.GOOGLE_CLIENT_ID = "<insert from Google Developers Console>" 
+	ret.GOOGLE_CLIENT_SECRET = "<insert from Google Developers Console>"
+		
+	return ret
+End Function
