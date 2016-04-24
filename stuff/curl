@@ -1,0 +1,7 @@
+curl -d "client_id=315359078666-32jsmi0r3r4n720njmo3avf89ism3c61.apps.googleusercontent.com&client_secret=AHnlzPrtq3Tbij05iGSeoawz&code=DGEH-BLBN4/mN-MM_v6vRD4EcTTO_vXpFz_Din1-D8SJ5HEMNT5Yqo&grant_type=http://oauth.net/grant_type/device/1.0" https://www.googleapis.com/oauth2/v4/token
+
+client_id=315359078666-32jsmi0r3r4n720njmo3avf89ism3c61.apps.googleusercontent.com&client_secret=AHnlzPrtq3Tbij05iGSeoawz&code=DGEH-BLBN4/mN-MM_v6vRD4EcTTO_vXpFz_Din1-D8SJ5HEMNT5Yqo&grant_type=http://oauth.net/grant_type/device/1.0" https://www.googleapis.com/oauth2/v4/token
+client_id=315359078666-32jsmi0r3r4n720njmo3avf89ism3c61.apps.googleusercontent.com&client_secret=AHnlzPrtq3Tbij05iGSeoawz&code=DGEH-BLBN4%2FmN-MM_v6vRD4EcTTO_vXpFz_Din1-D8SJ5HEMNT5Yqo&grant_type=http%3A%2F%2Foauth.net%2Fgrant_type%2Fdevice%2F1.0
+
+
+curl -d "client_id=315359078666-32jsmi0r3r4n720njmo3avf89ism3c61.apps.googleusercontent.com&client_secret=AHnlzPrtq3Tbij05iGSeoawz&code=DETL-JBBY4/5Tq0Hqt4X76oonzoi34csVOE2lUgTl7CTdsFujjshtM&grant_type=http://oauth.net/grant_type/device/1.0"

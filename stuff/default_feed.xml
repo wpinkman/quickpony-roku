@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/'
+	xmlns:gphoto='http://schemas.google.com/photos/2007' xmlns:exif='http://schemas.google.com/photos/exif/2007'
+	xmlns:media='http://search.yahoo.com/mrss/' xmlns:georss='http://www.georss.org/georss'
+	xmlns:gml='http://www.opengis.net/gml'>
+	<id>https://picasaweb.google.com/data/feed/api/user/default/albumid/default</id>
+	<updated>2016-04-17T06:18:57.381Z</updated>
+	<category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/photos/2007#album' />
+	<title type='text'>Drop Box</title>
+	<subtitle type='text'>Default album for newly uploaded photos.</subtitle>
+	<rights type='text'>public</rights>
+	<icon>https://lh3.googleusercontent.com/-2XtV1p7fNMo/TJPY4aua4gE/AAAAAAAAAIA/lOiWWgW6-3oOctcP2VZeLpaPBVtP1OVtwCHMQAQ/s160-c/DropBox</icon>
+	<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+		href='https://picasaweb.google.com/data/feed/api/user/108364943191771674766/albumid/5517992432217285121' />
+	<link rel='http://schemas.google.com/g/2005#post' type='application/atom+xml'
+		href='https://picasaweb.google.com/data/feed/api/user/108364943191771674766/albumid/5517992432217285121' />
+	<link rel='http://schemas.google.com/g/2005#resumable-create-media'
+		type='application/atom+xml'
+		href='https://picasaweb.google.com/data/upload/resumable/media/create-session/feed/api/user/108364943191771674766/albumid/5517992432217285121' />
+	<link rel='alternate' type='text/html'
+		href='https://picasaweb.google.com/108364943191771674766/DropBox' />
+	<link rel='http://schemas.google.com/photos/2007#slideshow' type='application/x-shockwave-flash'
+		href='https://photos.gstatic.com/media/slideshow.swf?host=picasaweb.google.com&amp;RGB=0x000000&amp;feed=https://picasaweb.google.com/data/feed/api/user/108364943191771674766/albumid/5517992432217285121?alt%3Drss' />
+	<link rel='http://schemas.google.com/photos/2007#report' type='text/html'
+		href='https://picasaweb.google.com/lh/reportAbuse?uname=108364943191771674766&amp;aid=5517992432217285121' />
+	<link rel='http://schemas.google.com/acl/2007#accessControlList'
+		type='application/atom+xml'
+		href='https://picasaweb.google.com/data/feed/api/user/108364943191771674766/albumid/5517992432217285121/acl' />
+	<link rel='self' type='application/atom+xml'
+		href='https://picasaweb.google.com/data/feed/api/user/108364943191771674766/albumid/5517992432217285121?start-index=1&amp;max-results=1000' />
+	<author>
+		<name>Andy Waddell</name>
+		<uri>https://picasaweb.google.com/108364943191771674766</uri>
+	</author>
+	<generator version='1.00' uri='http://picasaweb.google.com/'>Picasaweb</generator>
+	<openSearch:totalResults>3</openSearch:totalResults>
+	<openSearch:startIndex>1</openSearch:startIndex>
+	<openSearch:itemsPerPage>1000</openSearch:itemsPerPage>
+	<gphoto:id>5517992432217285121</gphoto:id>
+	<gphoto:name>DropBox</gphoto:name>
+	<gphoto:location />
+	<gphoto:access>public</gphoto:access>
+	<gphoto:timestamp>1284757968000</gphoto:timestamp>
+	<gphoto:numphotos>3</gphoto:numphotos>
+	<gphoto:numphotosremaining>1997</gphoto:numphotosremaining>
+	<gphoto:bytesUsed>773468</gphoto:bytesUsed>
+	<gphoto:user>108364943191771674766</gphoto:user>
+	<gphoto:nickname>Andy Waddell</gphoto:nickname>
+	<gphoto:albumType>Default</gphoto:albumType>
+	<gphoto:allowPrints>true</gphoto:allowPrints>
+	<gphoto:allowDownloads>true</gphoto:allowDownloads>
+	<entry>
+		<id>https://picasaweb.google.com/data/entry/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517992431665229938</id>
+		<published>2010-09-17T21:08:49.000Z</published>
+		<updated>2016-04-17T06:18:38.466Z</updated>
+		<category scheme='http://schemas.google.com/g/2005#kind'
+			term='http://schemas.google.com/photos/2007#photo' />
+		<title type='text'>photo.jpg</title>
+		<summary type='text'>Justin and Lou seal</summary>
+		<content type='image/jpeg'
+			src='https://lh3.googleusercontent.com/-mwtPOWauKls/TJPY4YqzMHI/AAAAAAAAAHw/6BZovsJKUawr2jQKAVo_2JjoHQDUYs-iQCHM/photo.jpg' />
+		<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/feed/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517992431665229938' />
+		<link rel='alternate' type='text/html'
+			href='https://picasaweb.google.com/108364943191771674766/DropBox#5517992431665229938' />
+		<link rel='http://schemas.google.com/photos/2007#canonical' type='text/html'
+			href='https://picasaweb.google.com/lh/photo/lK17f3uXlH40Ub-t_Mwn1NMTjNZETYmyPJy0liipFm0' />
+		<link rel='self' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517992431665229938' />
+		<link rel='edit' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517992431665229938/22' />
+		<link rel='edit-media' type='image/jpeg'
+			href='https://picasaweb.google.com/data/media/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517992431665229938/22' />
+		<link rel='media-edit' type='image/jpeg'
+			href='https://picasaweb.google.com/data/media/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517992431665229938/22' />
+		<link rel='http://schemas.google.com/photos/2007#report' type='text/html'
+			href='https://picasaweb.google.com/lh/reportAbuse?uname=108364943191771674766&amp;aid=5517992432217285121&amp;iid=5517992431665229938' />
+		<gphoto:id>5517992431665229938</gphoto:id>
+		<gphoto:version>22</gphoto:version>
+		<gphoto:position>1.0</gphoto:position>
+		<gphoto:albumid>5517992432217285121</gphoto:albumid>
+		<gphoto:access>public</gphoto:access>
+		<gphoto:width>600</gphoto:width>
+		<gphoto:height>800</gphoto:height>
+		<gphoto:size>150244</gphoto:size>
+		<gphoto:client />
+		<gphoto:checksum />
+		<gphoto:timestamp>1284496608000</gphoto:timestamp>
+		<gphoto:imageVersion>124</gphoto:imageVersion>
+		<gphoto:commentingEnabled>true</gphoto:commentingEnabled>
+		<gphoto:commentCount>0</gphoto:commentCount>
+		<gphoto:streamId>emailupload</gphoto:streamId>
+		<gphoto:license id='0' name='All Rights Reserved' url=''>ALL_RIGHTS_RESERVED</gphoto:license>
+		<gphoto:shapes faces='done' />
+		<exif:tags>
+			<exif:fstop>2.8</exif:fstop>
+			<exif:make>Apple</exif:make>
+			<exif:model>iPhone</exif:model>
+			<exif:flash>false</exif:flash>
+			<exif:time>1284496608000</exif:time>
+			<exif:imageUniqueID>cb3edd4f8b0c4f652c9f1ec483d6a3d3</exif:imageUniqueID>
+		</exif:tags>
+		<media:group>
+			<media:content
+				url='https://lh3.googleusercontent.com/-mwtPOWauKls/TJPY4YqzMHI/AAAAAAAAAHw/6BZovsJKUawr2jQKAVo_2JjoHQDUYs-iQCHM/photo.jpg'
+				height='512' width='384' type='image/jpeg' medium='image' />
+			<media:credit>Andy Waddell</media:credit>
+			<media:description type='plain'>Justin and Lou seal</media:description>
+			<media:keywords />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-mwtPOWauKls/TJPY4YqzMHI/AAAAAAAAAHw/6BZovsJKUawr2jQKAVo_2JjoHQDUYs-iQCHM/s72/photo.jpg'
+				height='72' width='54' />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-mwtPOWauKls/TJPY4YqzMHI/AAAAAAAAAHw/6BZovsJKUawr2jQKAVo_2JjoHQDUYs-iQCHM/s144/photo.jpg'
+				height='144' width='108' />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-mwtPOWauKls/TJPY4YqzMHI/AAAAAAAAAHw/6BZovsJKUawr2jQKAVo_2JjoHQDUYs-iQCHM/s288/photo.jpg'
+				height='288' width='216' />
+			<media:title type='plain'>photo.jpg</media:title>
+		</media:group>
+		<georss:where>
+			<gml:Point>
+				<gml:pos>37.7773333 -122.3901666</gml:pos>
+			</gml:Point>
+		</georss:where>
+	</entry>
+	<entry>
+		<id>https://picasaweb.google.com/data/entry/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517993455041657858</id>
+		<published>2010-09-17T21:12:47.000Z</published>
+		<updated>2016-04-17T06:18:38.466Z</updated>
+		<category scheme='http://schemas.google.com/g/2005#kind'
+			term='http://schemas.google.com/photos/2007#photo' />
+		<title type='text'>photo.jpg</title>
+		<summary type='text'>Sara's first soccer game</summary>
+		<content type='image/jpeg'
+			src='https://lh3.googleusercontent.com/-zVmVTFR-70A/TJPZz9CwPAI/AAAAAAAAAH4/7WteD6A1--QxCizSmfMqhql9l0i07u6EwCHM/photo.jpg' />
+		<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/feed/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517993455041657858' />
+		<link rel='alternate' type='text/html'
+			href='https://picasaweb.google.com/108364943191771674766/DropBox#5517993455041657858' />
+		<link rel='http://schemas.google.com/photos/2007#canonical' type='text/html'
+			href='https://picasaweb.google.com/lh/photo/Vt2Rt2aNEcEAtdjh6iP-DNMTjNZETYmyPJy0liipFm0' />
+		<link rel='self' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517993455041657858' />
+		<link rel='edit' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517993455041657858/17' />
+		<link rel='edit-media' type='image/jpeg'
+			href='https://picasaweb.google.com/data/media/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517993455041657858/17' />
+		<link rel='media-edit' type='image/jpeg'
+			href='https://picasaweb.google.com/data/media/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517993455041657858/17' />
+		<link rel='http://schemas.google.com/photos/2007#report' type='text/html'
+			href='https://picasaweb.google.com/lh/reportAbuse?uname=108364943191771674766&amp;aid=5517992432217285121&amp;iid=5517993455041657858' />
+		<gphoto:id>5517993455041657858</gphoto:id>
+		<gphoto:version>17</gphoto:version>
+		<gphoto:position>2.0</gphoto:position>
+		<gphoto:albumid>5517992432217285121</gphoto:albumid>
+		<gphoto:access>public</gphoto:access>
+		<gphoto:width>600</gphoto:width>
+		<gphoto:height>800</gphoto:height>
+		<gphoto:size>207633</gphoto:size>
+		<gphoto:client />
+		<gphoto:checksum />
+		<gphoto:timestamp>1284194455000</gphoto:timestamp>
+		<gphoto:imageVersion>126</gphoto:imageVersion>
+		<gphoto:commentingEnabled>true</gphoto:commentingEnabled>
+		<gphoto:commentCount>0</gphoto:commentCount>
+		<gphoto:streamId>emailupload</gphoto:streamId>
+		<gphoto:license id='0' name='All Rights Reserved' url=''>ALL_RIGHTS_RESERVED</gphoto:license>
+		<gphoto:shapes faces='done' />
+		<exif:tags>
+			<exif:fstop>2.8</exif:fstop>
+			<exif:make>Apple</exif:make>
+			<exif:model>iPhone</exif:model>
+			<exif:flash>false</exif:flash>
+			<exif:time>1284194455000</exif:time>
+			<exif:imageUniqueID>7cac813b9c3b5d5c82fb59b1a735d4eb</exif:imageUniqueID>
+		</exif:tags>
+		<media:group>
+			<media:content
+				url='https://lh3.googleusercontent.com/-zVmVTFR-70A/TJPZz9CwPAI/AAAAAAAAAH4/7WteD6A1--QxCizSmfMqhql9l0i07u6EwCHM/photo.jpg'
+				height='512' width='384' type='image/jpeg' medium='image' />
+			<media:credit>Andy Waddell</media:credit>
+			<media:description type='plain'>Sara's first soccer game</media:description>
+			<media:keywords />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-zVmVTFR-70A/TJPZz9CwPAI/AAAAAAAAAH4/7WteD6A1--QxCizSmfMqhql9l0i07u6EwCHM/s72/photo.jpg'
+				height='72' width='54' />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-zVmVTFR-70A/TJPZz9CwPAI/AAAAAAAAAH4/7WteD6A1--QxCizSmfMqhql9l0i07u6EwCHM/s144/photo.jpg'
+				height='144' width='108' />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-zVmVTFR-70A/TJPZz9CwPAI/AAAAAAAAAH4/7WteD6A1--QxCizSmfMqhql9l0i07u6EwCHM/s288/photo.jpg'
+				height='288' width='216' />
+			<media:title type='plain'>photo.jpg</media:title>
+		</media:group>
+	</entry>
+	<entry>
+		<id>https://picasaweb.google.com/data/entry/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517515251181647106</id>
+		<published>2010-09-16T14:17:07.000Z</published>
+		<updated>2016-04-17T06:18:57.381Z</updated>
+		<category scheme='http://schemas.google.com/g/2005#kind'
+			term='http://schemas.google.com/photos/2007#photo' />
+		<title type='text'>tahoe 269.jpg</title>
+		<summary type='text' />
+		<content type='image/jpeg'
+			src='https://lh3.googleusercontent.com/-bKJ8chra1ec/TJIm4017dQI/AAAAAAAAAHU/mw5bnx9sDjMOalUMHFSkN4NnNKsHvIHBQCHM/tahoe%2B269.jpg' />
+		<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/feed/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517515251181647106' />
+		<link rel='alternate' type='text/html'
+			href='https://picasaweb.google.com/108364943191771674766/DropBox#5517515251181647106' />
+		<link rel='http://schemas.google.com/photos/2007#canonical' type='text/html'
+			href='https://picasaweb.google.com/lh/photo/QRmrnHZg_jjHmRn1P9xBvtMTjNZETYmyPJy0liipFm0' />
+		<link rel='self' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517515251181647106' />
+		<link rel='edit' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517515251181647106/25' />
+		<link rel='edit-media' type='image/jpeg'
+			href='https://picasaweb.google.com/data/media/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517515251181647106/25' />
+		<link rel='media-edit' type='image/jpeg'
+			href='https://picasaweb.google.com/data/media/api/user/108364943191771674766/albumid/5517992432217285121/photoid/5517515251181647106/25' />
+		<link rel='http://schemas.google.com/photos/2007#report' type='text/html'
+			href='https://picasaweb.google.com/lh/reportAbuse?uname=108364943191771674766&amp;aid=5517992432217285121&amp;iid=5517515251181647106' />
+		<gphoto:id>5517515251181647106</gphoto:id>
+		<gphoto:version>25</gphoto:version>
+		<gphoto:position>3.0</gphoto:position>
+		<gphoto:albumid>5517992432217285121</gphoto:albumid>
+		<gphoto:access>public</gphoto:access>
+		<gphoto:width>1150</gphoto:width>
+		<gphoto:height>1724</gphoto:height>
+		<gphoto:size>415591</gphoto:size>
+		<gphoto:client>picasa</gphoto:client>
+		<gphoto:checksum>8225c04e</gphoto:checksum>
+		<gphoto:timestamp>1281350274000</gphoto:timestamp>
+		<gphoto:imageVersion>117</gphoto:imageVersion>
+		<gphoto:commentingEnabled>true</gphoto:commentingEnabled>
+		<gphoto:commentCount>0</gphoto:commentCount>
+		<gphoto:license id='0' name='All Rights Reserved' url=''>ALL_RIGHTS_RESERVED</gphoto:license>
+		<gphoto:shapes faces='done' />
+		<exif:tags>
+			<exif:fstop>5.6</exif:fstop>
+			<exif:make>NIKON CORPORATION</exif:make>
+			<exif:model>NIKON D60</exif:model>
+			<exif:exposure>0.002</exif:exposure>
+			<exif:flash>false</exif:flash>
+			<exif:focallength>55.0</exif:focallength>
+			<exif:iso>200</exif:iso>
+			<exif:time>1281350274000</exif:time>
+			<exif:imageUniqueID>bb440caed38bdd9b4979fcea5e75f9cc</exif:imageUniqueID>
+		</exif:tags>
+		<media:group>
+			<media:content
+				url='https://lh3.googleusercontent.com/-bKJ8chra1ec/TJIm4017dQI/AAAAAAAAAHU/mw5bnx9sDjMOalUMHFSkN4NnNKsHvIHBQCHM/tahoe%2B269.jpg'
+				height='512' width='342' type='image/jpeg' medium='image' />
+			<media:credit>Andy Waddell</media:credit>
+			<media:description type='plain' />
+			<media:keywords />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-bKJ8chra1ec/TJIm4017dQI/AAAAAAAAAHU/mw5bnx9sDjMOalUMHFSkN4NnNKsHvIHBQCHM/s72/tahoe%2B269.jpg'
+				height='72' width='49' />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-bKJ8chra1ec/TJIm4017dQI/AAAAAAAAAHU/mw5bnx9sDjMOalUMHFSkN4NnNKsHvIHBQCHM/s144/tahoe%2B269.jpg'
+				height='144' width='97' />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-bKJ8chra1ec/TJIm4017dQI/AAAAAAAAAHU/mw5bnx9sDjMOalUMHFSkN4NnNKsHvIHBQCHM/s288/tahoe%2B269.jpg'
+				height='288' width='193' />
+			<media:title type='plain'>tahoe 269.jpg</media:title>
+		</media:group>
+	</entry>
+</feed>
