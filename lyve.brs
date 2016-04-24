@@ -1,5 +1,6 @@
 Sub Main()
 
+	print "Run pony, run!"
 	RunScreenSaverSettings()
 	RunScreenSaver()
 
