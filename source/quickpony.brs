@@ -4,7 +4,7 @@ Sub Main()
 	
 	RunScreenSaverSettings()
 	RunScreenSaver()
-
+	
 	facade = CreateFacade()
 	facade.Show()
 	

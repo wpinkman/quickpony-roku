@@ -92,71 +92,72 @@ Sub ScreenSaverRun()
 	crect = m.canvas.GetCanvasRect()
 	mostRecentUrl = invalid
 	
-		port = CreateObject("roMessagePort")
-		xfer = CreateInstaRequest(port)
-		xfer.StartGetToString()
-		while true
-			msg = wait(0, port)
-			feed = invalid
-			if msg <> invalid then
-				if type(msg)="roUrlEvent" then
-					identity  = msg.GetSourceIdentity()
-					json = msg.GetString()
-					print "PWS(" + tostr(identity) + "):" + "::response: code=" + Stri(msg.GetResponseCode())
-					if json <> invalid
-						print chr(10) + json + chr(10)
-						feed=CreateObject("roXMLElement")
-						feed.Parse(json)
-						
-						for each entry in feed.entry
-							print "id:" + tostr(entry.id.gettext())
-						next
-						exit while
-					else
-						print "<empty body>"
-					end if ' xml invalid
-				end if ' urlevent
-			end if ' msg invalid
-		end while
+		xfer = CreatePwaRequest()
+		resp = xfer.GetToXml()
 
-		index = 0
-		
-		while true
-
-			entry = feed.entry[index]
-			mg = entry.GetNamedElements("media:group")
-			mc = mg.GetNamedElements("media:content")
-			print mc@url
-			mostRecentUrl = mc@url
-	
-			trec = {x:0,y:0,w:1280,h:720}
-			print "SHOW: " + mostRecentUrl
-			
-			m.canvas.ClearLayer(1)
-			m.canvas.SetLayer(2, {Url:mostRecentUrl})
+		if resp.code <> 200
+			m.canvas.SetLayer(1, {Text:resp.failure})
 			m.canvas.Show()
-					
-			msg = wait(6000, m.port)
-				
-'		if msg <> invalid
-'			print "got message type " + type(msg) + " exiting..."
-'			m.canvas.Close()
-'				exit while
-'			end if
-'		else
-'			print "skipping " + tostr(count) + ", " + tostr(rcount) + " of " + tostr(data.Count())  
-'		end if
+			while true
+			end while
+		else
+			feed = resp.root
 			
-'		rcount = rcount + 1
-'		count = count + 1
-						
-		index = index + 1
-		if index >= feed.entry.Count() 
+			instantUploadAlbumId = invalid
+			
+			m.canvas.SetLayer(1, {Text:"Searching for InstantUpload album ..."})
+			for each entry in feed.entry
+				albumType = entry.GetNamedElements("gphoto:albumType").getText()
+				print "albumType: " + albumType
+				if albumType = "InstantUpload"
+					instantUploadAlbumId = entry.GetNamedElements("gphoto:id").getText()
+					exit for
+				end if
+			next
+			
+			if instantUploadAlbumId <> invalid
+				print "instantUploadAlbumId:" + tostr(instantUploadAlbumId)
+				xfer = CreatePwaRequest()
+				xfer.endpoint = "/albumid/" + instantUploadAlbumId
+				resp = xfer.GetToXml()
+				feed = resp.root
+			else
+				m.canvas.SetLayer(1, {Text:"Failed to find InstantUpload album ..."})
+			end if
+			
+			
 			index = 0
-		end if
-		m.canvas.PurgeCachedImages()
+			
+			print "here we go " + tostr(feed.entry.Count()) + " photos in this feed"
+		
+			while true
+
+				entry = feed.entry[index]
+				mg = entry.GetNamedElements("media:group")
+				mc = mg.GetNamedElements("media:content")
+				print mc@url
+				mostRecentUrl = mc@url
 	
-	end while
+				if mostRecentUrl <> invalid
+	
+					print "SHOW: " + mostRecentUrl
+					
+					m.canvas.ClearLayer(1)
+					m.canvas.SetLayer(2, {Url:mostRecentUrl})
+					m.canvas.Show()
+					
+				msg = wait(1000, m.port)
+				
+				end if
+						
+				index = index + 1
+				if index >= feed.entry.Count() 
+					index = 0
+				end if
+				m.canvas.PurgeCachedImages()
+	
+			end while
+		end if
 		
 End Sub
 

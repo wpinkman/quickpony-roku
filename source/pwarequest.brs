@@ -10,41 +10,50 @@
 ' *********************************************************
 ' *********************************************************
 
-Function CreateInstaRequest(port=invalid) As Object
+Function CreatePwaRequest() As Object
 	this = {
 		
 		url: invalid,
 		
-		apiBase: "https://picasaweb.google.com/data/feed/api/",
-		endpoint: "user/default/albumid/default",
-		client_id: "9182da3734174970921b2139242576df",
+		apiBase: "https://picasaweb.google.com/data/feed/api/user/default",
+		endpoint: "",
 		access_token:  RegRead("access_token"),
 		qparams: invalid,
 		bparams: invalid,
 		body: invalid,
 		
+		' Google Data Protocol generic flags
+		pretty: true,
+		max_results: 100,
+		
 		type: "pwa",
 		
+		port: CreateObject("roMessagePort"),
 		xfer: CreateObject("roUrlTransfer"),
 		
 		identity: invalid,
 		
-		AddBodyParam: InstaRequestAddBodyParam,
-		AddQueryParam: InstaRequestAddQueryParam,
+		AddBodyParam: PwaRequestAddBodyParam,
+		AddQueryParam: PwaRequestAddQueryParam,
 		
-		ClearParams: InstaRequestClearParams,
-		BuildUrl: InstaRequestBuildUrl,
+		ClearParams: PwaRequestClearParams,
+		Build: PwaRequestBuild,
 		
-		StartGetToString: InstaRequestStartGetToString,
-		GetToString: InstaRequestGetToString,
+		StartGetToString: PwaRequestStartGetToString,
+		GetToString: PwaRequestGetToString,
 		
-		PostFromString: InstaRequestPostFromString,
-		DeleteFromString: InstaRequestDeleteFromString,
+		GetToXml: PwaRequestGetToXml,
 		
-		PostWithStatus: InstaRequestPostWithStatus,
-		DeleteWithStatus: InstaRequestDeleteWithStatus,
+		PostFromString: PwaRequestPostFromString,
+		DeleteFromString: PwaRequestDeleteFromString,
 		
-		ParseResponse: InstaRequestParseResponse,
+		PostWithStatus: PwaRequestPostWithStatus,
+		DeleteWithStatus: PwaRequestDeleteWithStatus,
+		
+		ParseResponse: PwaRequestParseResponse,
+		
+		RefreshToken: PwaRequestRefreshToken,
+		refreshed: false,
 		
 		Close: function() : m.xfer.AsyncCancel() : m.xfer = invalid : return m.xfer : end function
 	}
@@ -52,8 +61,10 @@ Function CreateInstaRequest(port=invalid) As Object
 	' allow for HTTPS
 	this.xfer.SetCertificatesFile("common:/certs/ca-bundle.crt")
 	this.xfer.InitClientCertificates()
-	this.xfer.SetPort(port)
+	this.xfer.SetPort(this.port)
 	this.xfer.EnableEncodings(true)
+	this.xfer.AddHeader("GData-Version", "2")
+
 	
 	this.identity = this.xfer.GetIdentity()
 	
@@ -65,25 +76,24 @@ End Function
 '_method=PUT or _method=DELETE as a parameter and we will treat it as 
 'if you used PUT or DELETE respectively.
 
-Sub InstaRequestClearParams()
+Sub PwaRequestClearParams()
 	if m.qparams <> invalid then
 		m.qparams = invalid
 	end if
 End Sub
 
 
-Sub InstaRequestAddQueryParam(name,value)
-	print "add query " + name + " = " + tostr(value)
+Sub PwaRequestAddQueryParam(name,value)
+	'print "add query " + name + " = " + tostr(value)
 	if m.qparams = invalid then
 		m.qparams = {}
 	end if
-	'param = {}
-	'param.name = name
-	'param.value = value
+
 	m.qparams[name] = value
+	
 End Sub
 
-Sub InstaRequestAddBodyParam(name,value)
+Sub PwaRequestAddBodyParam(name,value)
 	print "add body " + name + " = " + tostr(value)
 	if m.bparams = invalid then
 		m.bparams = []
@@ -94,8 +104,17 @@ Sub InstaRequestAddBodyParam(name,value)
 	m.bparams.Push(param)
 End Sub
 
-Sub InstaRequestBuildUrl()
+Sub PwaRequestBuild()
 	debug = m.url
+	
+	if m.pretty <> invalid
+		m.AddQueryParam("pretty", m.pretty)
+	end if
+	
+	if m.max_results <> invalid
+		m.AddQueryParam("max-results", m.max_results)
+	end if
+	
 	if m.url = invalid then
 		debug = m.endpoint
 		m.url = m.apiBase + m.endpoint
@@ -106,10 +125,8 @@ Sub InstaRequestBuildUrl()
 			else
 				m.AddBodyParam("access_token", m.access_token)
 			end if
-		else 
-			m.url = m.url + "?client_id=" + m.xfer.UrlEncode(m.client_id)
-			debug = debug  + "?client_id=<cid>"
 		end if
+		
 		if m.qparams <> invalid then
 			m.qparams.Reset()
 			while m.qparams.IsNext()
@@ -121,8 +138,8 @@ Sub InstaRequestBuildUrl()
 				debug = debug + encoded
 				
 			end while
-		
 		end if
+		
 		if m.bparams <> invalid then
 
 			for each param in m.bparams
@@ -141,36 +158,133 @@ Sub InstaRequestBuildUrl()
     m.xfer.SetUrl(m.url)
 End Sub
 
-Sub InstaRequestStartGetToString()
-	m.BuildUrl()	
+Sub PwaRequestStartGetToString()
+	m.Build()	
 	m.xfer.AsyncGetToString()
 End Sub
 
-Function InstaRequestGetToString() As String
-	m.BuildUrl()	
+Sub PwaRequestRefreshToken()
+		
+	refresh_token = RegRead("refresh_token")	
+	print "refreshing access_token using: " + refresh_token
+	
+	globals = GetGlobals()
+	
+	xfer = CreateObject("roUrlTransfer")
+	port = CreateObject("roMessagePort")
+	
+	xfer.SetCertificatesFile("common:/certs/ca-bundle.crt")
+	xfer.SetPort(port)
+	
+	body = "client_id=" + xfer.UrlEncode(globals.google.CLIENT_ID)
+	body = body + "&client_secret=" + xfer.UrlEncode(globals.google.CLIENT_SECRET)
+	body = body + "&refresh_token=" + xfer.UrlEncode(refresh_token)
+	body = body + "&grant_type=refresh_token"
+	
+	xfer.SetUrl("https://www.googleapis.com/oauth2/v4/token")
+	
+	xfer.AsyncPostFromString(body)
+		
+	while true
+		msg = wait(0, port)
+			
+		if msg <> invalid then
+			if type(msg)="roUrlEvent" then
+				identity  = msg.GetSourceIdentity()
+				json = msg.GetString()
+				print "PWS(" + tostr(identity) + "):" + "::response: code=" + Stri(msg.GetResponseCode())
+				if json <> invalid
+					print chr(10) + json + chr(10)
+				else
+					print "<empty body>"
+				end if
+				if msg.GetResponseCode() <> 200
+					print "FailureReason:" + msg.GetFailureReason()
+				else
+					print "writing to registry"
+					response = ParseJson(json)
+					m.access_token = response.access_token
+					RegWrite("access_token", response.access_token)
+					if response.refresh_token <> invalid
+						RegWrite("refresh_token", response.refresh_token)
+					end if
+				end if
+			end if
+		end if
+	end while
+
+	m.refreshed = true
+End Sub
+
+Function PwaRequestGetToXml()
+	
+	ret = {}
+	
+	m.Build()	
+	m.xfer.AsyncGetToString()
+	
+	msg = wait(0, m.port)
+	feed = invalid
+	
+	if msg <> invalid then
+		if type(msg)="roUrlEvent" then
+			identity  = msg.GetSourceIdentity()
+			xml = msg.GetString()
+			ret.body = xml
+			ret.code =  msg.GetResponseCode()
+			ret.failure = msg.GetFailureReason() 
+			
+			print "PWS(" + tostr(identity) + "):" + "::response: code=" + Stri(ret.code)
+			
+			if ret.code = 403 AND NOT m.refreshed
+				m.RefreshToken()
+				return m.GetToXml()
+			else if ret.code = 200
+			
+				if xml <> invalid
+					print chr(10) + xml + chr(10)
+					root = CreateObject("roXMLElement")
+					root.Parse(xml)
+					
+					ret.root = root
+				else
+						print "<empty body>"
+				end if
+			end if
+		end if ' urlevent
+	end if ' msg invalid
+	
+	
+	return ret
+	
+End Function
+
+Function PwaRequestGetToString() As String
+	m.Build()	
 	return m.xfer.GetToString()
 End Function
 
-Function InstaRequestPostFromString(request="") 
-	m.BuildUrl()	
+
+Function PwaRequestPostFromString(request="") 
+	m.Build()	
 	return m.xfer.PostFromString(request)
 End Function
 
 
-Function InstaRequestDeleteFromString(request="") 
+Function PwaRequestDeleteFromString(request="") 
 	m.xfer.SetRequest("DELETE")
-	m.BuildUrl()	
+	m.Build()	
 	return m.xfer.PostFromString(request)
 End Function
 
-Function InstaRequestDeleteWithStatus(title="Please wait ..")
+Function PwaRequestDeleteWithStatus(title="Please wait ..")
 	m.xfer.SetRequest("DELETE")
 	return m.PostWithStatus(title)
 End Function
 
-Function InstaRequestPostWithStatus(title="Please wait ..")
+Function PwaRequestPostWithStatus(title="Please wait ..")
 	ret = invalid
-	m.BuildUrl()
+	m.Build()
 	port = CreateObject("roMessagePort")
 	busyDialog = CreateObject("roOneLineDialog")
 	m.xfer.SetPort(port)
@@ -218,7 +332,7 @@ Function InstaRequestPostWithStatus(title="Please wait ..")
 	
 End Function
 
-Function InstaRequestParseResponse(json)
+Function PwaRequestParseResponse(json)
 		
 	ret = invalid
 	if json <> invalid

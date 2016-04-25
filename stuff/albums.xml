@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:gd='http://schemas.google.com/g/2005'
+	xmlns:openSearch='http://a9.com/-/spec/opensearch/1.1/' xmlns:gphoto='http://schemas.google.com/photos/2007'
+	xmlns:media='http://search.yahoo.com/mrss/' xmlns:app='http://www.w3.org/2007/app'
+	gd:etag='W/&quot;Dk4BSHc8fSp7ImA9XRBSFU4.&quot;'>
+	<id>https://picasaweb.google.com/data/feed/user/104005479611862647489</id>
+	<updated>2016-04-24T21:55:59.975Z</updated>
+	<category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/photos/2007#user' />
+	<title>104005479611862647489</title>
+	<subtitle />
+	<icon>https://lh3.googleusercontent.com/-BA8ZPBhlghk/AAAAAAAAAAI/AAAAAAAAAGU/KrXfd_ZI4Kw/s64-c/104005479611862647489.jpg</icon>
+	<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+		href='https://picasaweb.google.com/data/feed/api/user/104005479611862647489' />
+	<link rel='http://schemas.google.com/g/2005#post' type='application/atom+xml'
+		href='https://picasaweb.google.com/data/feed/api/user/104005479611862647489' />
+	<link rel='alternate' type='text/html'
+		href='https://picasaweb.google.com/104005479611862647489' />
+	<link rel='http://schemas.google.com/photos/2007#slideshow' type='application/x-shockwave-flash'
+		href='https://photos.gstatic.com/media/slideshow.swf?host=picasaweb.google.com&amp;RGB=0x000000&amp;feed=https://picasaweb.google.com/data/feed/api/user/104005479611862647489?alt%3Drss' />
+	<link rel='self' type='application/atom+xml'
+		href='https://picasaweb.google.com/data/feed/api/user/104005479611862647489?start-index=1&amp;max-results=100' />
+	<author>
+		<name>Andy Waddell</name>
+		<uri>https://picasaweb.google.com/104005479611862647489</uri>
+	</author>
+	<generator version='1.00' uri='http://picasaweb.google.com/'>Picasaweb</generator>
+	<openSearch:totalResults>9</openSearch:totalResults>
+	<openSearch:startIndex>1</openSearch:startIndex>
+	<openSearch:itemsPerPage>100</openSearch:itemsPerPage>
+	<gphoto:user>104005479611862647489</gphoto:user>
+	<gphoto:nickname>Andy Waddell</gphoto:nickname>
+	<gphoto:thumbnail>https://lh3.googleusercontent.com/-BA8ZPBhlghk/AAAAAAAAAAI/AAAAAAAAAGU/KrXfd_ZI4Kw/s64-c/104005479611862647489.jpg</gphoto:thumbnail>
+	<gphoto:quotalimit>32212254720</gphoto:quotalimit>
+	<gphoto:quotacurrent>415075064</gphoto:quotacurrent>
+	<gphoto:maxPhotosPerAlbum>2000</gphoto:maxPhotosPerAlbum>
+	<gphoto:organization name='Rokagram' canSilo='false'
+		canUnsilo='true' canUnsiloWithWarning='false' />
+	<entry gd:etag='&quot;YD4qeyI.&quot;'>
+		<id>https://picasaweb.google.com/data/entry/user/104005479611862647489/albumid/1000000462647489</id>
+		<published>2016-04-23T00:28:56.000Z</published>
+		<updated>2016-04-24T20:19:50.403Z</updated>
+		<category scheme='http://schemas.google.com/g/2005#kind'
+			term='http://schemas.google.com/photos/2007#album' />
+		<title>Auto Backup</title>
+		<summary />
+		<rights>protected</rights>
+		<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/feed/api/user/104005479611862647489/albumid/1000000462647489' />
+		<link rel='alternate' type='text/html'
+			href='https://picasaweb.google.com/104005479611862647489?alabel=small_instant_upload' />
+		<link rel='self' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/1000000462647489' />
+		<author>
+			<name>Andy Waddell</name>
+			<uri>https://picasaweb.google.com/104005479611862647489</uri>
+		</author>
+		<gphoto:id>1000000462647489</gphoto:id>
+		<gphoto:name>InstantUpload</gphoto:name>
+		<gphoto:access>private</gphoto:access>
+		<gphoto:timestamp>1461371336000</gphoto:timestamp>
+		<gphoto:numphotos>4</gphoto:numphotos>
+		<gphoto:user>104005479611862647489</gphoto:user>
+		<gphoto:nickname>Andy Waddell</gphoto:nickname>
+		<gphoto:albumType>InstantUpload</gphoto:albumType>
+		<gphoto:organization name='Rokagram' />
+		<media:group>
+			<media:content
+				url='https://lh3.googleusercontent.com/-vfLqb1abiZE/Vx0pAO6TqDE/AAAAAAAACkw/P36x2vRTMIcqCMpX9DH8QzgEwHlg2K9MgCHMQAQ/6277218539603732529'
+				type='image/jpeg' medium='image' />
+			<media:credit>Andy Waddell</media:credit>
+			<media:description type='plain'>Auto Backup</media:description>
+			<media:keywords />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-vfLqb1abiZE/Vx0pAO6TqDE/AAAAAAAACkw/P36x2vRTMIcqCMpX9DH8QzgEwHlg2K9MgCHMQAQ/s160-c/6277218539603732529'
+				height='160' width='160' />
+			<media:title type='plain'>Auto Backup</media:title>
+		</media:group>
+	</entry>
+	<entry gd:etag='&quot;YDkqeyI.&quot;'>
+		<id>https://picasaweb.google.com/data/entry/user/104005479611862647489/albumid/6271661726477382977</id>
+		<published>2016-04-09T20:50:36.000Z</published>
+		<updated>2016-04-09T21:12:01.638Z</updated>
+		<app:edited>2016-04-09T21:12:01.638Z</app:edited>
+		<category scheme='http://schemas.google.com/g/2005#kind'
+			term='http://schemas.google.com/photos/2007#album' />
+		<title>The Disney Dream</title>
+		<summary>54424241_smug_hBkBTb</summary>
+		<rights>private</rights>
+		<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/feed/api/user/104005479611862647489/albumid/6271661726477382977?authkey=Gv1sRgCLmIq4askvi_pAE' />
+		<link rel='alternate' type='text/html'
+			href='https://picasaweb.google.com/104005479611862647489/TheDisneyDream?authkey=Gv1sRgCLmIq4askvi_pAE' />
+		<link rel='self' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/6271661726477382977?authkey=Gv1sRgCLmIq4askvi_pAE' />
+		<link rel='edit' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/6271661726477382977?authkey=Gv1sRgCLmIq4askvi_pAE' />
+		<link rel='http://schemas.google.com/acl/2007#accessControlList'
+			type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/6271661726477382977/acl?authkey=Gv1sRgCLmIq4askvi_pAE' />
+		<author>
+			<name>Andy Waddell</name>
+			<uri>https://picasaweb.google.com/104005479611862647489</uri>
+		</author>
+		<gphoto:id>6271661726477382977</gphoto:id>
+		<gphoto:name>TheDisneyDream</gphoto:name>
+		<gphoto:location />
+		<gphoto:access>private</gphoto:access>
+		<gphoto:timestamp>1460235036000</gphoto:timestamp>
+		<gphoto:numphotos>1</gphoto:numphotos>
+		<gphoto:numphotosremaining>1999</gphoto:numphotosremaining>
+		<gphoto:bytesUsed>5505653</gphoto:bytesUsed>
+		<gphoto:user>104005479611862647489</gphoto:user>
+		<gphoto:nickname>Andy Waddell</gphoto:nickname>
+		<gphoto:organization name='Rokagram' />
+		<media:group>
+			<media:content
+				url='https://lh3.googleusercontent.com/-iStrEAMYl80/VwlrHI4Y9UE/AAAAAAAACj4/Ki17Tet0SVU16ER0_sIMbpobSlVjMUR_QCHMQAQ/TheDisneyDream'
+				type='image/jpeg' medium='image' />
+			<media:credit>Andy Waddell</media:credit>
+			<media:description type='plain'>54424241_smug_hBkBTb</media:description>
+			<media:keywords />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-iStrEAMYl80/VwlrHI4Y9UE/AAAAAAAACj4/Ki17Tet0SVU16ER0_sIMbpobSlVjMUR_QCHMQAQ/s160-c/TheDisneyDream'
+				height='160' width='160' />
+			<media:title type='plain'>The Disney Dream</media:title>
+		</media:group>
+	</entry>
+	<entry gd:etag='&quot;YDkqeyI.&quot;'>
+		<id>https://picasaweb.google.com/data/entry/user/104005479611862647489/albumid/5976983515092136865</id>
+		<published>2014-02-05T18:28:38.000Z</published>
+		<updated>2015-09-04T17:28:05.426Z</updated>
+		<app:edited>2015-09-04T17:28:05.426Z</app:edited>
+		<category scheme='http://schemas.google.com/g/2005#kind'
+			term='http://schemas.google.com/photos/2007#album' />
+		<title>2014-02-05</title>
+		<summary />
+		<rights>protected</rights>
+		<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/feed/api/user/104005479611862647489/albumid/5976983515092136865' />
+		<link rel='alternate' type='text/html'
+			href='https://picasaweb.google.com/104005479611862647489/2014020505' />
+		<link rel='self' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983515092136865' />
+		<link rel='edit' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983515092136865' />
+		<link rel='http://schemas.google.com/acl/2007#accessControlList'
+			type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983515092136865/acl' />
+		<author>
+			<name>Andy Waddell</name>
+			<uri>https://picasaweb.google.com/104005479611862647489</uri>
+		</author>
+		<gphoto:id>5976983515092136865</gphoto:id>
+		<gphoto:name>2014020505</gphoto:name>
+		<gphoto:location />
+		<gphoto:access>protected</gphoto:access>
+		<gphoto:timestamp>1391624918000</gphoto:timestamp>
+		<gphoto:numphotos>1</gphoto:numphotos>
+		<gphoto:numphotosremaining>1999</gphoto:numphotosremaining>
+		<gphoto:bytesUsed>292175</gphoto:bytesUsed>
+		<gphoto:user>104005479611862647489</gphoto:user>
+		<gphoto:nickname>Andy Waddell</gphoto:nickname>
+		<gphoto:albumType>Buzz</gphoto:albumType>
+		<gphoto:organization name='Rokagram' />
+		<media:group>
+			<media:content
+				url='https://lh3.googleusercontent.com/-2fp3qk_mqrc/UvKC1u1us6E/AAAAAAAACT4/7z6iTuc2OvMpR0V3uLqH4xAR46oKqlRAQCHMQAQ/2014020505'
+				type='image/jpeg' medium='image' />
+			<media:credit>Andy Waddell</media:credit>
+			<media:description type='plain' />
+			<media:keywords />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-2fp3qk_mqrc/UvKC1u1us6E/AAAAAAAACT4/7z6iTuc2OvMpR0V3uLqH4xAR46oKqlRAQCHMQAQ/s160-c/2014020505'
+				height='160' width='160' />
+			<media:title type='plain'>2014-02-05</media:title>
+		</media:group>
+	</entry>
+	<entry gd:etag='&quot;YDkqeyI.&quot;'>
+		<id>https://picasaweb.google.com/data/entry/user/104005479611862647489/albumid/5976983436064163201</id>
+		<published>2014-02-05T18:28:19.000Z</published>
+		<updated>2015-09-04T17:28:05.426Z</updated>
+		<app:edited>2015-09-04T17:28:05.426Z</app:edited>
+		<category scheme='http://schemas.google.com/g/2005#kind'
+			term='http://schemas.google.com/photos/2007#album' />
+		<title>2014-02-05</title>
+		<summary />
+		<rights>protected</rights>
+		<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/feed/api/user/104005479611862647489/albumid/5976983436064163201' />
+		<link rel='alternate' type='text/html'
+			href='https://picasaweb.google.com/104005479611862647489/2014020504' />
+		<link rel='self' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983436064163201' />
+		<link rel='edit' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983436064163201' />
+		<link rel='http://schemas.google.com/acl/2007#accessControlList'
+			type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983436064163201/acl' />
+		<author>
+			<name>Andy Waddell</name>
+			<uri>https://picasaweb.google.com/104005479611862647489</uri>
+		</author>
+		<gphoto:id>5976983436064163201</gphoto:id>
+		<gphoto:name>2014020504</gphoto:name>
+		<gphoto:location />
+		<gphoto:access>protected</gphoto:access>
+		<gphoto:timestamp>1391624899000</gphoto:timestamp>
+		<gphoto:numphotos>1</gphoto:numphotos>
+		<gphoto:numphotosremaining>1999</gphoto:numphotosremaining>
+		<gphoto:bytesUsed>292175</gphoto:bytesUsed>
+		<gphoto:user>104005479611862647489</gphoto:user>
+		<gphoto:nickname>Andy Waddell</gphoto:nickname>
+		<gphoto:albumType>Buzz</gphoto:albumType>
+		<gphoto:organization name='Rokagram' />
+		<media:group>
+			<media:content
+				url='https://lh3.googleusercontent.com/-Lp3onSP6ljU/UvKCxIb_hYE/AAAAAAAACT4/zsYTauEbvDsuYm0qSdleu2BZ0PMyttbkwCHMQAQ/2014020504'
+				type='image/jpeg' medium='image' />
+			<media:credit>Andy Waddell</media:credit>
+			<media:description type='plain' />
+			<media:keywords />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-Lp3onSP6ljU/UvKCxIb_hYE/AAAAAAAACT4/zsYTauEbvDsuYm0qSdleu2BZ0PMyttbkwCHMQAQ/s160-c/2014020504'
+				height='160' width='160' />
+			<media:title type='plain'>2014-02-05</media:title>
+		</media:group>
+	</entry>
+	<entry gd:etag='&quot;YDoqeyI.&quot;'>
+		<id>https://picasaweb.google.com/data/entry/user/104005479611862647489/albumid/5976983318920447857</id>
+		<published>2014-02-05T18:27:51.000Z</published>
+		<updated>2014-02-05T18:47:56.891Z</updated>
+		<app:edited>2014-02-05T18:47:56.891Z</app:edited>
+		<category scheme='http://schemas.google.com/g/2005#kind'
+			term='http://schemas.google.com/photos/2007#album' />
+		<title>2014-02-05</title>
+		<summary />
+		<rights>public</rights>
+		<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/feed/api/user/104005479611862647489/albumid/5976983318920447857' />
+		<link rel='alternate' type='text/html'
+			href='https://picasaweb.google.com/104005479611862647489/2014020503' />
+		<link rel='self' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983318920447857' />
+		<link rel='edit' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983318920447857' />
+		<link rel='http://schemas.google.com/acl/2007#accessControlList'
+			type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983318920447857/acl' />
+		<author>
+			<name>Andy Waddell</name>
+			<uri>https://picasaweb.google.com/104005479611862647489</uri>
+		</author>
+		<gphoto:id>5976983318920447857</gphoto:id>
+		<gphoto:name>2014020503</gphoto:name>
+		<gphoto:location />
+		<gphoto:access>public</gphoto:access>
+		<gphoto:timestamp>1391624871000</gphoto:timestamp>
+		<gphoto:numphotos>1</gphoto:numphotos>
+		<gphoto:numphotosremaining>1999</gphoto:numphotosremaining>
+		<gphoto:bytesUsed>298759</gphoto:bytesUsed>
+		<gphoto:user>104005479611862647489</gphoto:user>
+		<gphoto:nickname>Andy Waddell</gphoto:nickname>
+		<gphoto:albumType>Buzz</gphoto:albumType>
+		<gphoto:organization name='Rokagram' />
+		<media:group>
+			<media:content
+				url='https://lh3.googleusercontent.com/-pivb15CJs14/UvKCqUCwR3E/AAAAAAAAAC0/ic4tQGT9m90pWb5Qzdo-_I8DJEq-1HgcwCHMQAQ/2014020503'
+				type='image/jpeg' medium='image' />
+			<media:credit>Andy Waddell</media:credit>
+			<media:description type='plain' />
+			<media:keywords />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-pivb15CJs14/UvKCqUCwR3E/AAAAAAAAAC0/ic4tQGT9m90pWb5Qzdo-_I8DJEq-1HgcwCHMQAQ/s160-c/2014020503'
+				height='160' width='160' />
+			<media:title type='plain'>2014-02-05</media:title>
+		</media:group>
+	</entry>
+	<entry gd:etag='&quot;YDsqeyI.&quot;'>
+		<id>https://picasaweb.google.com/data/entry/user/104005479611862647489/albumid/5976983206416250753</id>
+		<published>2014-02-05T18:27:26.000Z</published>
+		<updated>2014-02-05T18:47:46.370Z</updated>
+		<app:edited>2014-02-05T18:47:46.370Z</app:edited>
+		<category scheme='http://schemas.google.com/g/2005#kind'
+			term='http://schemas.google.com/photos/2007#album' />
+		<title>2014-02-05</title>
+		<summary />
+		<rights>public</rights>
+		<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/feed/api/user/104005479611862647489/albumid/5976983206416250753' />
+		<link rel='alternate' type='text/html'
+			href='https://picasaweb.google.com/104005479611862647489/2014020502' />
+		<link rel='self' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983206416250753' />
+		<link rel='edit' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983206416250753' />
+		<link rel='http://schemas.google.com/acl/2007#accessControlList'
+			type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983206416250753/acl' />
+		<author>
+			<name>Andy Waddell</name>
+			<uri>https://picasaweb.google.com/104005479611862647489</uri>
+		</author>
+		<gphoto:id>5976983206416250753</gphoto:id>
+		<gphoto:name>2014020502</gphoto:name>
+		<gphoto:location />
+		<gphoto:access>public</gphoto:access>
+		<gphoto:timestamp>1391624846000</gphoto:timestamp>
+		<gphoto:numphotos>1</gphoto:numphotos>
+		<gphoto:numphotosremaining>1999</gphoto:numphotosremaining>
+		<gphoto:bytesUsed>292175</gphoto:bytesUsed>
+		<gphoto:user>104005479611862647489</gphoto:user>
+		<gphoto:nickname>Andy Waddell</gphoto:nickname>
+		<gphoto:albumType>Buzz</gphoto:albumType>
+		<gphoto:organization name='Rokagram' />
+		<media:group>
+			<media:content
+				url='https://lh3.googleusercontent.com/-nJoodh-0p1c/UvKCjw7qd4E/AAAAAAAAACY/uRzk0dc3Q8o9qFoUyDko66VMfKGaNLPSQCHMQAQ/2014020502'
+				type='image/jpeg' medium='image' />
+			<media:credit>Andy Waddell</media:credit>
+			<media:description type='plain' />
+			<media:keywords />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-nJoodh-0p1c/UvKCjw7qd4E/AAAAAAAAACY/uRzk0dc3Q8o9qFoUyDko66VMfKGaNLPSQCHMQAQ/s160-c/2014020502'
+				height='160' width='160' />
+			<media:title type='plain'>2014-02-05</media:title>
+		</media:group>
+	</entry>
+	<entry gd:etag='&quot;YDkqeyI.&quot;'>
+		<id>https://picasaweb.google.com/data/entry/user/104005479611862647489/albumid/5976983168562593169</id>
+		<published>2014-02-05T18:27:17.000Z</published>
+		<updated>2015-09-04T17:28:05.426Z</updated>
+		<app:edited>2015-09-04T17:28:05.426Z</app:edited>
+		<category scheme='http://schemas.google.com/g/2005#kind'
+			term='http://schemas.google.com/photos/2007#album' />
+		<title>2014-02-05</title>
+		<summary />
+		<rights>protected</rights>
+		<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/feed/api/user/104005479611862647489/albumid/5976983168562593169' />
+		<link rel='alternate' type='text/html'
+			href='https://picasaweb.google.com/104005479611862647489/20140205' />
+		<link rel='self' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983168562593169' />
+		<link rel='edit' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983168562593169' />
+		<link rel='http://schemas.google.com/acl/2007#accessControlList'
+			type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5976983168562593169/acl' />
+		<author>
+			<name>Andy Waddell</name>
+			<uri>https://picasaweb.google.com/104005479611862647489</uri>
+		</author>
+		<gphoto:id>5976983168562593169</gphoto:id>
+		<gphoto:name>20140205</gphoto:name>
+		<gphoto:location />
+		<gphoto:access>protected</gphoto:access>
+		<gphoto:timestamp>1391624837000</gphoto:timestamp>
+		<gphoto:numphotos>1</gphoto:numphotos>
+		<gphoto:numphotosremaining>1999</gphoto:numphotosremaining>
+		<gphoto:bytesUsed>292175</gphoto:bytesUsed>
+		<gphoto:user>104005479611862647489</gphoto:user>
+		<gphoto:nickname>Andy Waddell</gphoto:nickname>
+		<gphoto:albumType>Buzz</gphoto:albumType>
+		<gphoto:organization name='Rokagram' />
+		<media:group>
+			<media:content
+				url='https://lh3.googleusercontent.com/-pwwTQ3wFhYc/UvKChj6pfZE/AAAAAAAACT4/1edeWxk4p-YZdFE2lFoivu0OnMvMdq6PgCHMQAQ/20140205'
+				type='image/jpeg' medium='image' />
+			<media:credit>Andy Waddell</media:credit>
+			<media:description type='plain' />
+			<media:keywords />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-pwwTQ3wFhYc/UvKChj6pfZE/AAAAAAAACT4/1edeWxk4p-YZdFE2lFoivu0OnMvMdq6PgCHMQAQ/s160-c/20140205'
+				height='160' width='160' />
+			<media:title type='plain'>2014-02-05</media:title>
+		</media:group>
+	</entry>
+	<entry gd:etag='&quot;YDoqeyI.&quot;'>
+		<id>https://picasaweb.google.com/data/entry/user/104005479611862647489/albumid/5965677611797243761</id>
+		<published>2014-01-06T07:15:45.000Z</published>
+		<updated>2014-02-03T04:14:00.400Z</updated>
+		<app:edited>2014-02-03T04:14:00.400Z</app:edited>
+		<category scheme='http://schemas.google.com/g/2005#kind'
+			term='http://schemas.google.com/photos/2007#album' />
+		<title>Profile Photos</title>
+		<summary>Album for profile photos</summary>
+		<rights>public</rights>
+		<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/feed/api/user/104005479611862647489/albumid/5965677611797243761' />
+		<link rel='alternate' type='text/html'
+			href='https://picasaweb.google.com/104005479611862647489/ProfilePhotos02' />
+		<link rel='self' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5965677611797243761' />
+		<link rel='edit' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5965677611797243761' />
+		<link rel='http://schemas.google.com/acl/2007#accessControlList'
+			type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/5965677611797243761/acl' />
+		<author>
+			<name>Andy Waddell</name>
+			<uri>https://picasaweb.google.com/104005479611862647489</uri>
+		</author>
+		<gphoto:id>5965677611797243761</gphoto:id>
+		<gphoto:name>ProfilePhotos02</gphoto:name>
+		<gphoto:location />
+		<gphoto:access>public</gphoto:access>
+		<gphoto:timestamp>1388992545000</gphoto:timestamp>
+		<gphoto:numphotos>1</gphoto:numphotos>
+		<gphoto:numphotosremaining>1999</gphoto:numphotosremaining>
+		<gphoto:bytesUsed>160675</gphoto:bytesUsed>
+		<gphoto:user>104005479611862647489</gphoto:user>
+		<gphoto:nickname>Andy Waddell</gphoto:nickname>
+		<gphoto:albumType>ProfilePhotos</gphoto:albumType>
+		<gphoto:organization name='Rokagram' />
+		<media:group>
+			<media:content
+				url='https://lh3.googleusercontent.com/-tQMqHA5j59E/UspYLi-s53E/AAAAAAAAAGY/ej12_yQXIZEuJi9F1-Bv_p46TkvmK9LAQCHMQAQ/ProfilePhotos02'
+				type='image/jpeg' medium='image' />
+			<media:credit>Andy Waddell</media:credit>
+			<media:description type='plain' />
+			<media:keywords />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-tQMqHA5j59E/UspYLi-s53E/AAAAAAAAAGY/ej12_yQXIZEuJi9F1-Bv_p46TkvmK9LAQCHMQAQ/s160-c/ProfilePhotos02'
+				height='160' width='160' />
+			<media:title type='plain'>Profile Photos</media:title>
+		</media:group>
+	</entry>
+	<entry gd:etag='&quot;USp7ImA9&quot;'>
+		<id>https://picasaweb.google.com/data/entry/user/104005479611862647489/albumid/6269477074220583105</id>
+		<published>2016-04-03T23:33:02.000Z</published>
+		<updated>2016-04-07T23:17:58.422Z</updated>
+		<app:edited>2016-04-07T23:17:58.422Z</app:edited>
+		<category scheme='http://schemas.google.com/g/2005#kind'
+			term='http://schemas.google.com/photos/2007#album' />
+		<title>Mother's Day 2011</title>
+		<summary>16977081_smug_XHpNCp</summary>
+		<rights>private</rights>
+		<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/feed/api/user/104005479611862647489/albumid/6269477074220583105?authkey=Gv1sRgCI7n0tvZ1bqbtAE' />
+		<link rel='alternate' type='text/html'
+			href='https://picasaweb.google.com/104005479611862647489/MotherSDay2011?authkey=Gv1sRgCI7n0tvZ1bqbtAE' />
+		<link rel='self' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/6269477074220583105?authkey=Gv1sRgCI7n0tvZ1bqbtAE' />
+		<link rel='edit' type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/6269477074220583105?authkey=Gv1sRgCI7n0tvZ1bqbtAE' />
+		<link rel='http://schemas.google.com/acl/2007#accessControlList'
+			type='application/atom+xml'
+			href='https://picasaweb.google.com/data/entry/api/user/104005479611862647489/albumid/6269477074220583105/acl?authkey=Gv1sRgCI7n0tvZ1bqbtAE' />
+		<author>
+			<name>Andy Waddell</name>
+			<uri>https://picasaweb.google.com/104005479611862647489</uri>
+		</author>
+		<gphoto:id>6269477074220583105</gphoto:id>
+		<gphoto:name>MotherSDay2011</gphoto:name>
+		<gphoto:location />
+		<gphoto:access>private</gphoto:access>
+		<gphoto:timestamp>1459726382000</gphoto:timestamp>
+		<gphoto:numphotos>10</gphoto:numphotos>
+		<gphoto:numphotosremaining>1990</gphoto:numphotosremaining>
+		<gphoto:bytesUsed>23785554</gphoto:bytesUsed>
+		<gphoto:user>104005479611862647489</gphoto:user>
+		<gphoto:nickname>Andy Waddell</gphoto:nickname>
+		<gphoto:organization name='Rokagram' />
+		<media:group>
+			<media:content
+				url='https://lh3.googleusercontent.com/-CSMMKEAU8Ew/VwGoLpBfiME/AAAAAAAACjQ/aCFa0KYpJZ8rNo6SWing0NVBpU99ilzhgCHMQAQ/MotherSDay2011'
+				type='image/jpeg' medium='image' />
+			<media:credit>Andy Waddell</media:credit>
+			<media:description type='plain'>16977081_smug_XHpNCp</media:description>
+			<media:keywords />
+			<media:thumbnail
+				url='https://lh3.googleusercontent.com/-CSMMKEAU8Ew/VwGoLpBfiME/AAAAAAAACjQ/aCFa0KYpJZ8rNo6SWing0NVBpU99ilzhgCHMQAQ/s160-c/MotherSDay2011'
+				height='160' width='160' />
+			<media:title type='plain'>Mother's Day 2011</media:title>
+		</media:group>
+	</entry>
+</feed>
+
