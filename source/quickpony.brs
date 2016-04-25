@@ -2,11 +2,12 @@ Sub Main()
 
 	print "Run QuickPony, run ... "
 	
+	facade = CreateFacade()
+	facade.Show()
+	
 	RunScreenSaverSettings()
 	RunScreenSaver()
 	
-	facade = CreateFacade()
-	facade.Show()
 	
 End Sub
 

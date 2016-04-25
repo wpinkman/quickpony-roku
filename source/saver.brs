@@ -144,6 +144,9 @@ Sub ScreenSaverRun()
 					
 					m.canvas.ClearLayer(1)
 					m.canvas.SetLayer(2, {Url:mostRecentUrl})
+					counterText = tostr(index) + " of " + tostr(feed.entry.Count())
+					tattrs = {Font:"Small", HAlign:"Right", VAlign:"Top"}
+					m.canvas.SetLayer(3, {Text:counterText, TextAttrs:tattrs})
 					m.canvas.Show()
 					
 				msg = wait(1000, m.port)
@@ -347,7 +350,7 @@ Sub GetDeviceLinkingCode()
 					print chr(10) + json + chr(10)
 					
 					ShowMessageDialog(ParseJson(json))
-					
+					exit while
 				else
 					print "<empty body>"
 				end if

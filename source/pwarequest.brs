@@ -208,6 +208,7 @@ Sub PwaRequestRefreshToken()
 					if response.refresh_token <> invalid
 						RegWrite("refresh_token", response.refresh_token)
 					end if
+					exit while
 				end if
 			end if
 		end if
@@ -215,11 +216,12 @@ Sub PwaRequestRefreshToken()
 
 	m.refreshed = true
 End Sub
-
+'RegWrite("access_token", "ya29..zwKvMpm_guu7kBOZm0fqc9L38kNu2qLMQKUtQxXp0yWSZTN-YUU0y_HGMyLMg6F5_Q")
 Function PwaRequestGetToXml()
 	
 	ret = {}
 	
+	print "PwaRequestGetToXml m.refreshed=" + tostr(m.refreshed) + ", access_token:" + m.access_token
 	m.Build()	
 	m.xfer.AsyncGetToString()
 	
