@@ -12,66 +12,6 @@ Sub Main()
 End Sub
 
 
-Sub Hermes(stack, meshId)
-
-   port = CreateObject("roMessagePort")
-   
-   screen = CreateObject("roSlideShow")
-   screen.SetMessagePort(port)
-   screen.Show() 
-   
-   url = "https://hermes." + stack + ".blackpearlsystems.net/v1/media?mesh_id=" + meshId
-   
-   xfer = CreateObject("roUrlTransfer")
-   xfer.SetCertificatesFile("common:/certs/ca-bundle.crt")
-   xfer.InitClientCertificates()
-   xfer.SetUrl(url)
-   
-   json = xfer.GetToString()
-   selections = ParseJson(json)
-   
-   'print json
-   contentList = []
-	for each mobject in selections.media
-		url = invalid
-		if mobject.medium <> invalid
-			url = mobject.medium.url
-		end if
-		if mobject.extra_large <> invalid
-			url = mobject.extra_large.url
-		end if
-		ci = {}
-		if mobject.experience_time_iso8601 <> invalid
-			'ci.TextOverlayBody = mobject.id
-			ci.TextOverlayBody = "Experienced at " + mobject.experience_time_iso8601
-			'ci.TextOverlayBody = "body"
-		end if
-		if url <> invalid
-			ci.url = url
-			contentList.push(ci)
-		end if
-	next
-	print "setting " + Stri(contentList.Count()) + " items"
-   screen.SetContentList(contentList)
-   screen.SetPeriod(5)
-   'screen.SetTextOverlayIsVisible(true)
-   screen.SetTextOverlayHoldTime(3000)
-     
-   While True
-       msg = wait(0, port)
-       if msg.isScreenClosed() 
-           exit while
-       else if msg.isPlaybackPosition() 
-       		print "roSlideShowEvent::isPlaybackPosition::" + Stri(msg.GetIndex())
-       else if msg.isRequestFailed()
-			print "roSlideShowEvent::RequestFailed::" + Stri(msg.GetIndex()) 
-		else if msg.isRequestInterrupted()
-			print "roSlideShowEvent::RequestInterrupted::" + Stri(msg.GetIndex())
-       
-       end if
-   End While   
-
-End Sub
 
 Function CreateFacade()
 
@@ -79,7 +19,7 @@ Function CreateFacade()
 	port = CreateObject("roMessagePort")
 	canvas.SetMessagePort(port)
 	'Set opaque background
-	canvas.SetLayer(0, {Color:"#FF000000", Text: "Calling Mr. Hermes...", CompositionMode:"Source"})
+	canvas.SetLayer(0, {Color:"#FF000000", Text: "Giddy Up!", CompositionMode:"Source"})
 	
 	return canvas
 End Function

@@ -80,11 +80,15 @@ Sub ScreenSaverRun()
 	m.canvas.SetMessagePort(m.port)
 	m.canvas.SetRequireAllImagesToDraw(true)
 	m.canvas.SetLayer(0, {Color:"#FF000000", CompositionMode:"Source"})
-	m.canvas.SetLayer(1, {Text:"Loading."})
-	
-	m.canvas.Show()
 	
 	m.access_token = RegRead("access_token")
+
+	if m.access_token = invalid
+		m.canvas.SetLayer(1, {Text:"Link to Google using: Settings > Screensaver > QuickPony > Custom settings"})
+	else
+		m.canvas.SetLayer(1, {Text:"Loading."})
+	end if
+	m.canvas.Show()
 	
 	reqUrl = invalid
 	count = 0
@@ -92,8 +96,8 @@ Sub ScreenSaverRun()
 	crect = m.canvas.GetCanvasRect()
 	mostRecentUrl = invalid
 	
-		xfer = CreatePwaRequest()
-		resp = xfer.GetToXml()
+	xfer = CreatePwaRequest()
+	resp = xfer.GetToXml()
 
 		if resp.code <> 200
 			m.canvas.SetLayer(1, {Text:resp.failure})
@@ -373,8 +377,8 @@ Function ShowMessageDialog(googleDeviceReg) As Void
 	screen.AddFocalText(" ", "spacing-dense")
 	screen.SetRegistrationCode(googleDeviceReg.user_code)
 	screen.AddParagraph("[Registration screen paragraphs are justified to right and left edges and may continue on multiple lines]")
-	screen.AddButton(0, "get a new code")
-	screen.AddButton(1, "back")
+	'screen.AddButton(0, "get a new code")
+	'screen.AddButton(1, "back")
 	screen.Show()
 	while true
     	dlgMsg = wait(googleDeviceReg.interval * 1000, port)

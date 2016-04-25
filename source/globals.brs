@@ -59,7 +59,7 @@ Sub InitGlobals()
 	devInfo = CreateObject("roDeviceInfo")
 	uniqueId = devInfo.GetDeviceUniqueId()
 	' safety check in case the localhost was left true
-	if NOT ((uniqueId = "N0A09L015216") OR (uniqueId = "1GJ37E062368") OR (uniqueId = "12A18M065074")) 
+	if NOT ((uniqueId = "N0A09L015216") OR (uniqueId = "1GJ37E062368") OR (uniqueId = "12A18M065074") OR (uniqueId = "4124CG163257")) 
 		globals.localhost = false
 		globals.saverTest = false
 		globals.saver2Test = false
