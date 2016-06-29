@@ -5,7 +5,7 @@ Sub Main()
 	facade = CreateFacade()
 	facade.Show()
 	
-	RunScreenSaverSettings()
+	'RunScreenSaverSettings()
 	RunScreenSaver()
 	
 	
@@ -69,14 +69,14 @@ End Function
 
 Sub RunScreenSaverSettings()
 	SetTheme()
-	saver = CreateScreenSaver()
+	saver = CreateSgScreenSaver()
 	saver.RunSettings()
 
 End Sub
 
 Sub RunScreenSaver()
 	GetGlobals().saver = true
-	saver = CreateScreenSaver()
+	saver = CreateSgScreenSaver()
 	saver.Run()
 End Sub
 
